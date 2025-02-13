@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#New_body_div {
+  background-size: 200%;
+  animation: move_wave2 30s infinite
+}
+
+
+
+@keyframes move_wave2 {
+  0% {
+      background-position: 450% 100%
+  }
+
+  50% {
+      background-position: 10% 40%
+  }
+
+  to {
+      background-position: 450% 100%
+  }
+}
+
+#comingsoon{
+  animation: animName 30s linear infinite;
+
+}
+
+@keyframes animName {
+  0%{
+     transform: rotate(0deg);
+    }
+ 100%{
+     transform: rotate(360deg);
+    }
+ }
+ 
